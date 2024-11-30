@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\eris.ai\\eris-env\\Scripts\\python.exe",
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "editor.formatOnSave": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false
+  }
+  
