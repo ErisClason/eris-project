@@ -1,9 +1,12 @@
-from sqlalchemy import Column, Integer, String, create_engine
-from sqlalchemy.ext.declarative import declarative_base
+from pydantic import BaseModel
 
-Base = declarative_base()
+class User(BaseModel):
+    """
+    Represents a user in the system.
 
-class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
+    Attributes:
+        id (int): The unique identifier for the user.
+        name (str): The name of the user.
+    """
+    id: int
+    name: str
